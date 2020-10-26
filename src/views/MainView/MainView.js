@@ -47,7 +47,30 @@ const MainView = (props) =>{
                             Tipo de vista con todas las validaciones
                         </Typography>
                         <Typography variant="body1">
-                            Ruta: src/views/formulario1
+                            Ruta: src/views/VistaGenerica
+                        </Typography>
+                        <Typography varian="body1">
+                            Ejemplo basado en la vista de creación de usuario. Esta página contiene un botón de creación de usuario
+                                que al momento de ejecutarlo muestra un formulario. Un área de filtrado y el área donde van los cards de usuarios.
+
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper>
+                        <Typography variant="h4">
+                           Componentes locales 
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/Components
+                        </Typography>
+                        <Typography>
+                            Descripción: En esta carpeta se encuentran archivos importantes como son: 
+                            <ul>
+                                <li>CustomSnackbar</li>
+                                <li>Alert Dialog</li>
+                                <li>Filter select</li>
+                            </ul>
                         </Typography>
                     </Paper>
                 </Grid>
