@@ -1,0 +1,23 @@
+.content {
+  width: 520px;
+  height: 70px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.content h3 {
+  letter-spacing: 3;
+  padding: 5px 0 0 5px;
+  color: grey;
+  text-align: left;
+}
+
+.content p {
+  display: inline;
+  font-size: 15px;
+  color: lightseagreen;
+}

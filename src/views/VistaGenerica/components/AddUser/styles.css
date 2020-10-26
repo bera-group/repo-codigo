@@ -1,0 +1,64 @@
+.MuiDialog-paperWidthSm {
+    max-width: 80% !important;
+  }
+  .MuiInputBase-input {
+    width: 100% !important;
+  }
+  
+  .text h4 {
+    font-weight: bold;
+    color: gray;
+    font-size: 12px;
+    size: 6;
+  }
+  
+  .box-style {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 12px 25px -24px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+  }
+  
+  .box-style2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+  }
+  .text-area {
+    width: 100%;
+    margin-top: 8.5px;
+    background-color: white;
+    box-shadow: 2px 12px 25px -24px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .box-style2 {
+    background-color: white;
+    box-shadow: 2px 12px 25px -24px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    height: 37px;
+    margin-top: 8.5px;
+    width: 100%;
+   
+  }
+  .option{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .textn {
+    font-weight: bold;
+    color: gray;
+    size: 6;
+    margin: 30;
+    text-align: right;
+    position: relative;
+    right: 370px;
+  }
+  
+  .plus-btn {
+    margin-top: -40px !important;
+  }
+  .box-mar {
+    margin-top: -9px !important;
+  }
+  
