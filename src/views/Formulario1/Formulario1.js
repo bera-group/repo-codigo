@@ -312,6 +312,7 @@ export default function Formulario1() {
     );
   });
 
+  // Validaciones del formulario
   function uploadAllData() {
     var idm = typeof idiomas !== "undefined" && idiomas.length > 0;
     var tec = typeof tecnologia !== "undefined" && tecnologia.length > 0;
@@ -432,7 +433,6 @@ export default function Formulario1() {
           if (certHerr.includes("Otro") && certAnoth !== null) {
             v.push(certAnoth);
           }
-          //Meto la llamada a la API ACÁ UWU
           //subirData(v);
         } else {
           setCheck23(false);
@@ -442,12 +442,12 @@ export default function Formulario1() {
           );
         }
       } else {
-        //Meto la llamada a la API ACÁ UWU
         //subirData(v);
       }
     }
   }
 /*
+* Método para subir un archivo a firestore
   const subirData = async (v) => {
     const formData = new FormData();
     //file en el botón
@@ -499,59 +499,10 @@ export default function Formulario1() {
 
         createPostulante(dataUser)
           .then((res) => {
-            if (res.status === 201) {
-              handleOpenSnackbar(
-                SNACKBAR_SEVERITIES.WARNING,
-                SNACKBAR_MESSAGESS.WAIT
-              );
-              setTimeout(() => {
-                try {
-                  //Despues de subir el user hago esto
-
-                  //sube el file a firestore
-                  spaceRef.put(file).then(function (snapshot) {
-                    var progress =
-                      (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                    setProgress(progress);
-                    console.log("progres", progress);
-                    if (progress === 100) {
-                      //setInformacion();
-
-                      console.log("Uploaded a blob or file!");
-                      handleOpenSnackbar(
-                        SNACKBAR_SEVERITIES.SUCCESS,
-                        SNACKBAR_MESSAGESS.SUCCESS_SIGNUP
-                      );
-                      //si es se subió a fs
-                      getBack();
-                    }
-                  });
-                } catch (err) {
-                  if (err.response.status === 500) {
-                    handleOpenSnackbar(
-                      SNACKBAR_SEVERITIES.ERROR,
-                      SNACKBAR_MESSAGESS.API_ERROR
-                    );
-                  } else {
-                    handleOpenSnackbar(
-                      SNACKBAR_SEVERITIES.WARNING,
-                      SNACKBAR_MESSAGESS.ERR_OTHER_FIELDS(err.response.data.msg)
-                    );
-                  }
-                }
-              }, 1000);
-            } else {
-              handleOpenSnackbar(
-                SNACKBAR_SEVERITIES.ERROR,
-                SNACKBAR_MESSAGESS.API_ERROR
-              );
-            }
+            
           })
           .catch((err) => {
-            handleOpenSnackbar(
-              SNACKBAR_SEVERITIES.ERROR,
-              SNACKBAR_MESSAGESS.API_ERROR
-            );
+            
           });
       } else {
         handleOpenSnackbar(

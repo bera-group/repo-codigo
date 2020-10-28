@@ -175,22 +175,10 @@ const CustomizedDialogs = (props) => {
     /*
     signUpRequest(userInfo)
       .then((res) => {
-        if (res.status === 201) {
-          handleOpenSnackbar(
-            SNACKBAR_SEVERITIES.SUCCESS,
-            SNACKBAR_MESSAGES.SUCCESS_SIGNUP
-          );
-          sendEmail(email, contra, nombre, grupo, evaluatorName);
-          setOpen(false);
-          props.updateUsers();
-        }
+        
       })
       .catch((err) => {
-        console.log(err);
-        handleOpenSnackbar(
-          SNACKBAR_SEVERITIES.ERROR,
-          SNACKBAR_MESSAGES.API_ERROR
-        );
+        
       });
       */
   }
@@ -238,16 +226,7 @@ const CustomizedDialogs = (props) => {
         /*
         verifyEmail(email)
           .then((res) => {
-            if (res.status === 200) {
-              if (res.data.exist === true) {
-                handleOpenSnackbar(
-                  SNACKBAR_SEVERITIES.WARNING,
-                  SNACKBAR_MESSAGES.EMAIL_EXIST
-                );
-              } else {
-                SignUpValidated(userInfo, evaluatorName);
-              }
-            }
+            
           })
           .catch((err) => {
             console.log(err);

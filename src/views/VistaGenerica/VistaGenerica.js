@@ -220,6 +220,7 @@ export default function Users(props) {
     filterHandler({});
   };
   /*
+  * Funcionalidad para descargar las hojas de vida que se encuentran en firestore
   const downloadcv = () => {
     var zip = new JSZip();
     var zipFilename = "hojasdevida.zip"; //name of .zip in download
@@ -296,36 +297,10 @@ export default function Users(props) {
     /*
     getUsersByRequest(filters)
       .then((res) => {
-        setUsuarios(res.data);
-        const userswithcv = []; //temporal array for users with cv field != null
-        res.data.map((user) => {
-          //users maps
-          if (user.HojadeVidaLink) {
-            //validate the field
-            userswithcv.push(user); //push in temporal array the user
-          }
-        });
-
-        setUsuarios2(userswithcv); //set new array with cv fields
-        if (res.data.length === 0) {
-          setUsersFound(PAGE_STATES.NOT_ELEMENTS_FOUND);
-          handleOpenSnackbar(
-            SNACKBAR_SEVERITIES.INFO,
-            "No se encontraron usuarios."
-          );
-        } else {
-          setUsersFound(PAGE_STATES.LOADED);
-        }
-        setUsersState(PAGE_STATES.LOADED);
-        setUsersToShow(res.data);
+        
       })
       .catch((err) => {
-        setUsersState(PAGE_STATES.NOT_FOUND);
-        console.log(err);
-        handleOpenSnackbar(
-          SNACKBAR_SEVERITIES.ERROR,
-          SNACKBAR_MESSAGES.ERR_OBTAINING_USERS
-        );
+        
       });
       */
   }
@@ -336,19 +311,10 @@ export default function Users(props) {
     /*
     getGroupsRequest()
       .then((res) => {
-        const updatedGroups = res.data.map((group) => {
-          return { value: group.value, label: group.label };
-        });
-        setGroups(updatedGroups);
-        setGroupsState(PAGE_STATES.LOADED);
+        
       })
       .catch((err) => {
-        setGroupsState(PAGE_STATES.NOT_FOUND);
-        console.log(err);
-        handleOpenSnackbar(
-          SNACKBAR_SEVERITIES.ERROR,
-          SNACKBAR_MESSAGES.ERR_OBTAINING_GROUPS
-        );
+        
       });
       */
   };

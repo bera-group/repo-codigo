@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
+    
   }));
 
 const MainView = (props) =>{
@@ -31,6 +32,16 @@ const MainView = (props) =>{
     return(
         <div classes={classes.root}>
             <Grid container spacing={2}>
+                <Grid item xs={12}>
+                    <center>
+                        <Typography variant="h1">
+                            Repositorio de código
+                        </Typography>
+                        <Typography>
+                            Modifíquese a discreción
+                        </Typography>
+                    </center>
+                </Grid>
                 <Grid item xs={6} onClick={handleForm1}>
                     <Paper>
                         <Typography variant="h3">
@@ -38,6 +49,10 @@ const MainView = (props) =>{
                         </Typography>
                         <Typography variant="body1">
                             Ruta: src/views/formulario1
+                        </Typography>
+                        <Typography varian="body1">
+                            Ejemplo basado en la vista de creación de un postulado. Este formulario contienen todas las validaciones pertinientes
+                            Dentro existe un método para subir archivos a firestore
                         </Typography>
                     </Paper>
                 </Grid>
@@ -52,7 +67,6 @@ const MainView = (props) =>{
                         <Typography varian="body1">
                             Ejemplo basado en la vista de creación de usuario. Esta página contiene un botón de creación de usuario
                                 que al momento de ejecutarlo muestra un formulario. Un área de filtrado y el área donde van los cards de usuarios.
-
                         </Typography>
                     </Paper>
                 </Grid>
