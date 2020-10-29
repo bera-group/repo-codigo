@@ -5,7 +5,7 @@ import "./styles.css";
 import { Grid } from "@material-ui/core";
 import "react-datepicker/dist/react-datepicker.css";
 import { USER_TYPES_LIST } from "../../../../common/values";
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import ListItemText from "@material-ui/core/ListItemText";
 function generateRandomPass() {
@@ -21,7 +21,7 @@ function generateRandomPass() {
 
   return passv2;
 }
-const useStyles = makeStyles((theme) => ({}));
+//const useStyles = makeStyles((theme) => ({}));
 function PopupModel(props) {
   const [email, setEmail] = useState(null);
   const [id, setId] = useState(null);
@@ -31,7 +31,7 @@ function PopupModel(props) {
   const [tipo, setTipo] = useState(USER_TYPES_LIST[0].value);
   const [grupo, setGrupo] = useState(props.groups[0].value);
   const [dir, setDir] = useState(null);
-  const classes = useStyles();
+  //const classes = useStyles();
   useEffect(() => {
     props.obtenerDatos(email, id, nombre, apellido, contra, tipo, grupo, dir);
   });

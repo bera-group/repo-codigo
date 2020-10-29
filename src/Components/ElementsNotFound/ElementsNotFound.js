@@ -1,8 +1,8 @@
 import React from "react";
-import { Divider, Grid } from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/styles";
+import { Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
-import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
+//import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 import {
   createMuiTheme,
   responsiveFontSizes,
