@@ -120,6 +120,19 @@ const MainView = (props) =>{
                         </Typography>
                     </Paper>
                 </Grid>
+                <Grid item xs={6}>
+                    <Paper>
+                        <Typography variant="h4">
+                           Servicios de API
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/api-examples
+                        </Typography>
+                        <Typography>
+                            Ejemplo de implementación de API. Este ejemplo incluye el controlador, el modelo, las rutas, el middleware y los servicios.
+                        </Typography>
+                    </Paper>
+                </Grid>
             </Grid>
         </div>
     )
