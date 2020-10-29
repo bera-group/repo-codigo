@@ -29,6 +29,12 @@ const MainView = (props) =>{
         })
     }
 
+    const handleLogin = () => {
+        history.push({
+            pathname: 'login'
+        })
+    }
+
     return(
         <div classes={classes.root}>
             <Grid container spacing={2}>
@@ -85,6 +91,19 @@ const MainView = (props) =>{
                                 <li>Alert Dialog</li>
                                 <li>Filter select</li>
                             </ul>
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6} onClick={handleLogin}>
+                    <Paper>
+                        <Typography variant="h4">
+                           Vista de inicio de sesión
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/Login
+                        </Typography>
+                        <Typography>
+                            Ejemplo de vista de inicio de sesión
                         </Typography>
                     </Paper>
                 </Grid>
