@@ -28,7 +28,7 @@ import { Box } from "@material-ui/core";
 //import firebase from "./../../firebase";
 //import { saveAs } from "file-saver";
 import ElementsNotFound from "../../Components/ElementsNotFound/ElementsNotFound";
-import { useSnackbar } from "notistack";
+//import { useSnackbar } from "notistack";
 import CustomSnackbar from "../../Components/CustomSnackbar/CustomSnackbar";
 import { user, grupos } from "./data";
 const drawerWidth = 240;
@@ -169,7 +169,7 @@ const containerStyle = {
 
 export default function Users(props) {
   console.log("[Users.js] redering...");
-  const [usuarios2, setUsuarios2] = useState("");
+  //const [usuarios2, setUsuarios2] = useState("");
   const classes = useStyles();
   const [filters, setFilters] = useState({
     tipo: ["UsuarioR", "UsuarioP"],

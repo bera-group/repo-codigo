@@ -15,7 +15,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import HelpIcon from "@material-ui/icons/Help";
 import IconButton from "@material-ui/core/IconButton";
 //import firebase from "./../../firebase";
-import { v4 as uuidv4 } from "uuid";
+//import { v4 as uuidv4 } from "uuid";
 //import { createPostulante } from "../../api/server";
 import {
   herramientas,
@@ -236,7 +236,7 @@ export default function Formulario1() {
   const [check27, setCheck27] = React.useState(true);
   const [check28] = React.useState(true);
   const [check29, setCheck29] = React.useState(true);
-  const [, setProgress] = React.useState(0);
+  //const [, setProgress] = React.useState(0);
   const [edad, setEdad] = React.useState("");
   const [openSnackbar, setOpenSnackbar] = React.useState(false);
   const [snackbarMessage, setSnackbarMessage] = React.useState(

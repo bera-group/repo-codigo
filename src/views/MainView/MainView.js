@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
+      //color: theme.palette.text.secondary,
     },
     
   }));
@@ -29,6 +29,12 @@ const MainView = (props) =>{
         })
     }
 
+    const handleLogin = () => {
+        history.push({
+            pathname: 'login'
+        })
+    }
+
     return(
         <div classes={classes.root}>
             <Grid container spacing={2}>
@@ -42,10 +48,10 @@ const MainView = (props) =>{
                         </Typography>
                     </center>
                 </Grid>
-                <Grid item xs={6} onClick={handleForm1}>
-                    <Paper>
+                <Grid item xs={6}>
+                    <Paper onClick={handleForm1}>
                         <Typography variant="h3">
-                            Formulario de registro #1
+                            <u>Formulario de registro #1</u>
                         </Typography>
                         <Typography variant="body1">
                             Ruta: src/views/formulario1
@@ -56,10 +62,10 @@ const MainView = (props) =>{
                         </Typography>
                     </Paper>
                 </Grid>
-                <Grid item xs={6} onClick={handleView1}>
-                    <Paper>
+                <Grid item xs={6}>
+                    <Paper onClick={handleView1}>
                         <Typography variant="h3">
-                            Tipo de vista con todas las validaciones
+                            <u>Tipo de vista con todas las validaciones</u>
                         </Typography>
                         <Typography variant="body1">
                             Ruta: src/views/VistaGenerica
@@ -85,6 +91,45 @@ const MainView = (props) =>{
                                 <li>Alert Dialog</li>
                                 <li>Filter select</li>
                             </ul>
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper onClick={handleLogin}>
+                        <Typography variant="h4">
+                           <u>Vista de inicio de sesión</u>
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/views/Login
+                        </Typography>
+                        <Typography>
+                            Ejemplo de vista de inicio de sesión
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper>
+                        <Typography variant="h4">
+                           Implementación token
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/toke-imp
+                        </Typography>
+                        <Typography>
+                            Implementación de funcionalidad
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper>
+                        <Typography variant="h4">
+                           Servicios de API
+                        </Typography>
+                        <Typography Varian="body1">
+                            Ruta: src/api-examples
+                        </Typography>
+                        <Typography>
+                            Ejemplo de implementación de API. Este ejemplo incluye el controlador, el modelo, las rutas, el middleware y los servicios.
                         </Typography>
                     </Paper>
                 </Grid>

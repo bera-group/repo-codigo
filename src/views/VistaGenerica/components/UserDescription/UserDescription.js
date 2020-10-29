@@ -4,8 +4,8 @@ import { Tooltip } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import { withRouter } from "react-router-dom";
-import { USER_TYPES } from "../../../../common/values";
-import { getRouteByUserType } from "../../../../common/utils";
+//import { USER_TYPES } from "../../../../common/values";
+//import { getRouteByUserType } from "../../../../common/utils";
 class UserDescription extends React.Component {
   state = {
     _id: this.props._id,

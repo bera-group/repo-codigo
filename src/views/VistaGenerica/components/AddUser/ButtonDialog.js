@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Dialog from "@material-ui/core/Dialog";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Fab, Grid } from "@material-ui/core";
@@ -13,9 +13,9 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { teal, red } from "@material-ui/core/colors";
 import CancelIcon from "@material-ui/icons/Cancel";
 import SaveIcon from "@material-ui/icons/Save";
-import { AddCircleOutline, SettingsInputSvideo } from "@material-ui/icons";
+import { AddCircleOutline } from "@material-ui/icons";
 import { SNACKBAR_SEVERITIES } from "../../../../common/values";
-import emailjs from "emailjs-com";
+//import emailjs from "emailjs-com";
 import CustomSnackbar from "../../../../Components/CustomSnackbar/CustomSnackbar";
 //import { signUpRequest, verifyEmail } from "../../../../api/server";
 import { getStringWithCap } from "../../../../common/utils";
@@ -155,7 +155,7 @@ const CustomizedDialogs = (props) => {
       return null;
     }
   }
-
+/*
   function sendEmail(email, contra, nombre, grupo, evaluador) {
     var contact = {
       email: email,
@@ -172,7 +172,7 @@ const CustomizedDialogs = (props) => {
     );
   }
   function SignUpValidated(userInfo, evaluatorName) {
-    /*
+    
     signUpRequest(userInfo)
       .then((res) => {
         
@@ -180,8 +180,9 @@ const CustomizedDialogs = (props) => {
       .catch((err) => {
         
       });
-      */
+      
   }
+  */
   function signUpHandler() {
     //const evaluatorName = `${authState.name} ${authState.lastname}`;
     const userInfo = {
@@ -207,8 +208,8 @@ const CustomizedDialogs = (props) => {
       if (
         prop !== "contra" &&
         prop !== "evaluador" &&
-        prop != "aspsalarial" &&
-        prop != "experiencia"
+        prop !== "aspsalarial" &&
+        prop !== "experiencia"
       ) {
         if (!userInfo[prop]) {
           errorsArray.push(getStringWithCap(prop));
